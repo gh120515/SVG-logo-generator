@@ -8,7 +8,7 @@ This app will allow you to generate a simple SVG logo with a series of prompts.
 
 The app was built to practice the builder's knowledge and skills in developing basic backend apps, using Node.js and using packages such as inquirer (collect information) and fs (read/write data).
 
-## Table of Contents (Optional)
+<!-- ## Table of Contents (Optional) -->
 
 <!-- If your README is long, add a table of contents to make it easy for users to find what they need.
 
