@@ -1,7 +1,7 @@
 // required modules
 const inquirer = require('inquirer');
 const fs = require('fs');
-const {Circle, Square, Triangle} = require('/lib/shapes')
+const shapes = require('./lib/shapes')
 
 // user prompts
 async function getUserInput() {
@@ -17,7 +17,7 @@ async function getUserInput() {
       },
       {
         type: 'input',
-        name: 'textColor',
+        name: 'textColour',
         message: 'Enter the text color (name [e.g. black] or HEX colour code):',
       },
       {
@@ -28,7 +28,7 @@ async function getUserInput() {
       },
       {
         type: 'input',
-        name: 'shapeColor',
+        name: 'colour',
         message: 'Enter the shape color (name [e.g. white]  or HEX colour code):',
       },
     ]);
