@@ -11,26 +11,33 @@ const questions = ([
         name: 'text',
         message: 'Enter up to three characters for your logo;',
         validate: (input) => {
-            console.log('Invalid input - please enter up to three characters only.')
-            return input.length > 0 && input.length <= 3;
-        },
+            if (input.length <= 3) {
+                return true;
+            } else {
+                console.log('\nInvalid input - please enter up to three characters only. \nPlease enter again.')
+            }
+        }
       },
+
       {
         type: 'input',
         name: 'textColour',
         message: 'Enter the text color (name [e.g. black] or HEX colour code):',
       },
+
       {
         type: 'list',
         name: 'shape',
         message: 'Choose a shape:',
         choices: ['circle', 'triangle', 'square'],
       },
+
       {
         type: 'input',
         name: 'shapeColour',
         message: 'Enter the shape color (name [e.g. white]  or HEX colour code):',
       },
+
 ]);
 
  // function to set logo components, based on shape chosen
