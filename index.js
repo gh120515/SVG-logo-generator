@@ -78,7 +78,7 @@ function writeToFile(fileName, data) {
             if(err) {
                 console.log(err)
             }
-            console.log('Your logo is ready!')
+            console.log('Your logo is ready! (Generated logo.svg)')
         }
     )};
 
