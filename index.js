@@ -29,7 +29,7 @@ const questions = ([
         type: 'list',
         name: 'shape',
         message: 'Choose a shape:',
-        choices: ['circle', 'triangle', 'square'],
+        choices: ['Circle', 'Square', 'Triangle'],
       },
 
       {
@@ -43,7 +43,7 @@ const questions = ([
  // function to set logo components, based on shape chosen
  function logoShape(answer) {
     // create new objects from imported Shapes classes
-    if (answer.shape === 'circle') {
+    if (answer.shape === 'Circle') {
         let userShape = new Circle (
             answer.text,
             answer.textColour,
@@ -52,7 +52,7 @@ const questions = ([
         return userShape.render();
     }
 
-    if (answer.shape === 'square') {
+    if (answer.shape === 'Square') {
         let userShape = new Square (
             answer.text,
             answer.textColour,
@@ -61,7 +61,7 @@ const questions = ([
         return userShape.render();
     }
 
-    if (answer.shape === 'triangle') {
+    if (answer.shape === 'Triangle') {
         let userShape = new Triangle (
             answer.text,
             answer.textColour,
