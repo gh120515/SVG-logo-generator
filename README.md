@@ -1,7 +1,5 @@
 # SVG-logo-generator
 
-[Demonstration Video]()
-
 ## Description
 
 This app will allow you to generate a simple SVG logo with a series of prompts.
@@ -20,7 +18,7 @@ The following are required to use this app:
 
 You can do this through the 'Code' button above this README; for example, you can clone the repository to your local machine.
 
-![Options for downloading the repo](Develop/img/download.png)
+![Options for downloading the repo](lib/img/download.png)
 
 2. Node.js
 
@@ -38,8 +36,7 @@ After performing the basic setup, open the repository that you downloaded / clon
 
 The most convinient method is through VS Code (source-code editor program), which has a function where you can directly open the terminal in the directory (right-click on the 'Develop' folder, then select 'Open in Integrated Terminal').
 
-![Screenshot of the directory, where you can open the integrated terminal]()
-<!-- TODO: insert new screen -->
+![Screenshot of the directory, where you can open the integrated terminal](lib/img/directory.png)
 
 After opening the repository directory (in the 'Develop' folder) in the terminal, enter the following to run the app:
 
@@ -47,13 +44,15 @@ After opening the repository directory (in the 'Develop' folder) in the terminal
 
 Follow the prompts (example below) then your SVG log will be generated.
 
-![Prompts to follow after initialsing the app]()
-<!-- TODO: insert new screen -->
+![Prompts to follow after initialsing the app](lib/img/example.png)
 
 Below is an example SVG logo generated.
 
-![example SVG logo generated using this app]()
-<!-- TODO: insert new screen -->
+![example SVG logo generated using this app](lib/img/sample.png)
+
+### Demonstration
+
+[Walkthrough Video]()
 
 ## Credits
 
