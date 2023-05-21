@@ -8,6 +8,8 @@ This app will allow you to generate a simple SVG logo with a series of prompts.
 
 The app was built to practice the builder's knowledge and skills object-oriented programming (OOP), using Node.js and using packages such as inquirer (collect information) and fs (read/write data).
 
+In addition, I have also learned how to generate SVG files using XML code.
+
 <!-- ## Table of Contents (Optional) -->
 
 <!-- If your README is long, add a table of contents to make it easy for users to find what they need.
@@ -64,9 +66,8 @@ Below is an example SVG logo generated.
 
 ## Credits
 
-<!-- README template based on the [Professional README Guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide).
-
-It is highly recommended to refer to this guide when editing your README. -->
+### Tutorials
+[SVG Files: What They Are and How to Make One](https://blog.hubspot.com/website/what-is-an-svg-file)
 
 
 ## License

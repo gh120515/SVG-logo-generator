@@ -28,7 +28,7 @@ async function getUserInput() {
       },
       {
         type: 'input',
-        name: 'logoColour',
+        name: 'shapeColour',
         message: 'Enter the shape color (name [e.g. white]  or HEX colour code):',
       },
     ]);
@@ -36,25 +36,58 @@ async function getUserInput() {
     return userInput;
   };
 
-// generate file
-function generateSVG(userInput) {
-  const svgOptions = {
-    size: '400x400',
-    text: userInput.text,
-    color: userInput.textColour,
+// generate logo function
+function generateLogo() {
+    // base XML code for the SVG shape (size of logo)
+    let svg = '<svg version="1.1" width="400" height="400" xmlns="http://www.w3.org/2000/svg">';
     
-  };
+    // function to set logo components, based on shape chosen
+    let logoShape = function(answer) {
+        // create new objects from imported Shapes classes
+        if (answer.shape === 'circle') {
+            let userShape = new Circle (
+                answer.text,
+                answer.textColour,
+                answer.shapeColour
+            )
+            return userShape.render();
+        }
 
-  const logo = create(svgOptions);
-  fs.writeFileSync('logo.svg', logo.data);
-}
+        if (answer.shape === 'square') {
+            let userShape = new Square (
+                answer.text,
+                answer.textColour,
+                answer.shapeColour
+            )
+            return userShape.render();
+        }
+
+        if (answer.shape === 'triangle') {
+            let userShape = new Triangle (
+                answer.text,
+                answer.textColour,
+                answer.shapeColour
+            )
+            return userShape.render();
+        }
+    }
+
+    // write to file using fs
+    fs.writeFile(fileName, logoShape,
+        err => {
+            if(err) {
+                console.log(err)
+            }
+            console.log('Your logo is ready!')
+        })
+};
 
 
 // run app
 async function init() {
     const userInput = await getUserInput();
-    generateSVG(userInput);
-    console.log('Generated logo.svg');
+    // generate logo based on user input
+    generateLogo(userInput);
   }
   
 init();
