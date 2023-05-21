@@ -28,7 +28,7 @@ async function getUserInput() {
       },
       {
         type: 'input',
-        name: 'colour',
+        name: 'logoColour',
         message: 'Enter the shape color (name [e.g. white]  or HEX colour code):',
       },
     ]);
@@ -41,8 +41,8 @@ function generateSVG(userInput) {
   const svgOptions = {
     size: '400x400',
     text: userInput.text,
-    color: userInput.textColor,
-    background: userInput.shapeColor,
+    color: userInput.textColour,
+    
   };
 
   const logo = create(svgOptions);
