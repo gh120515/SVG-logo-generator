@@ -1,7 +1,7 @@
 // required modules
 const inquirer = require('inquirer');
 const fs = require('fs');
-// const { create } = require('svg-captcha');
+const {Circle, Square, Triangle} = require('/lib/shapes')
 
 // user prompts
 async function getUserInput() {
@@ -24,7 +24,7 @@ async function getUserInput() {
         type: 'list',
         name: 'shape',
         message: 'Choose a shape:',
-        choices: ['circle', 'triangle', 'square', 'star', 'box3d', 'folder', 'note', 'signature', 'house'],
+        choices: ['circle', 'triangle', 'square'],
       },
       {
         type: 'input',
@@ -37,6 +37,24 @@ async function getUserInput() {
   };
 
 // generate file
+function generateSVG(userInput) {
+  const svgOptions = {
+    size: '400x400',
+    text: userInput.text,
+    color: userInput.textColor,
+    background: userInput.shapeColor,
+  };
+
+  const logo = create(svgOptions);
+  fs.writeFileSync('logo.svg', logo.data);
+}
+
 
 // run app
-getUserInput();
+async function init() {
+    const userInput = await getUserInput();
+    generateSVG(userInput);
+    console.log('Generated logo.svg');
+  }
+  
+init();
