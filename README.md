@@ -52,7 +52,7 @@ Below is an example SVG logo generated.
 
 ### Demonstration
 
-[Walkthrough Video]()
+[Walkthrough Video](https://drive.google.com/file/d/1u6VzkWWcuE5ykT4jP66yX7H-n_Rni2RN/view)
 
 ## Credits
 
