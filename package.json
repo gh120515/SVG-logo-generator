@@ -13,7 +13,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^8.2.4",
-    "svg-captcha": "^1.4.0"
+    "inquirer": "^8.2.4"
   }
 }

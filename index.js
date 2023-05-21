@@ -1,7 +1,9 @@
 // required modules
 const inquirer = require('inquirer');
 const fs = require('fs');
-const shapes = require('./lib/shapes')
+const { Circle, Square, Triangle } = require('./lib/shapes')
+// file to export logo into
+const file = './logo.svg';
 
 // user prompts
 async function getUserInput() {
@@ -38,8 +40,6 @@ async function getUserInput() {
 
 // generate logo function
 function generateLogo() {
-    // base XML code for the SVG shape (size of logo)
-    let svg = '<svg version="1.1" width="400" height="400" xmlns="http://www.w3.org/2000/svg">';
     
     // function to set logo components, based on shape chosen
     let logoShape = function(answer) {
@@ -73,7 +73,7 @@ function generateLogo() {
     }
 
     // write to file using fs
-    fs.writeFile(fileName, logoShape,
+    fs.writeFile(file, logoShape,
         err => {
             if(err) {
                 console.log(err)
