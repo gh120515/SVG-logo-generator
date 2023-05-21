@@ -1,10 +1,11 @@
 
         <svg version="1.1"
-        width="300" height="200"
+        width="400" height="400"
         xmlns="http://www.w3.org/2000/svg">
-        <polygon points="100 0, 0 ,0 50, 100"
-        fill="undefined" />
-        <text x="150" y="125" font-size="60" text-anchor="middle" 
-        fill="undefined">aaa</text>
+        <polygon points="50 15, 100 100, 0 100"
+        fill="blue" />
+        <text 
+        x="50%" y="65%" font-size="110%" text-anchor="middle" 
+        fill="red">aaa</text>
         </svg>
         
