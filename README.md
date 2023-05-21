@@ -1,6 +1,6 @@
 # SVG-logo-generator
 
-[Deployment Link]()
+[Demonstration Video]()
 
 ## Description
 
@@ -9,15 +9,6 @@ This app will allow you to generate a simple SVG logo with a series of prompts.
 The app was built to practice the builder's knowledge and skills object-oriented programming (OOP), using Node.js and using packages such as inquirer (collect information) and fs (read/write data).
 
 In addition, I have also learned how to generate SVG files using XML code.
-
-<!-- ## Table of Contents (Optional) -->
-
-<!-- If your README is long, add a table of contents to make it easy for users to find what they need.
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license) -->
 
 ## Installation
 
@@ -67,8 +58,10 @@ Below is an example SVG logo generated.
 ## Credits
 
 ### Tutorials
-[SVG Files: What They Are and How to Make One](https://blog.hubspot.com/website/what-is-an-svg-file)
 
+[Node.js util.promisify() Method](https://www.geeksforgeeks.org/node-js-util-promisify-method/) by hunter__js
+
+[SVG Files: What They Are and How to Make One](https://blog.hubspot.com/website/what-is-an-svg-file) by Jamie Juviler
 
 ## License
 
